@@ -96,9 +96,11 @@ body, html {
     padding: 0 0 0 50px;
 }
 
+/*
 .active li {
     background-color:  #3498db;
 }
+*/
 
 .active li:hover {
     background-color: ;
