@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style/tingle.min.css">
     <link rel="stylesheet" href="style/style.css">
     <title>MyBlog</title>
 </head>
@@ -21,8 +22,9 @@
             <div id="side-bar">
               <div id="user-info">
                 <img src="images/abstract-user-flat-1.svg" alt="">
-                <h4>Gabbykun555</h4>
-                <a href="">Edit Profile</a>
+                <h4 id="username">Gabbykun555</h4>
+                <a id="edit" href="#modal">Edit Profile</a>
+                
                </div>
                
               <div id="links">
@@ -35,6 +37,12 @@
               </div>
             </div>
         </section> 
+        
+        
+        
+        <section>
+            
+        </section>
         
         
         
@@ -80,7 +88,7 @@
               </div>
               <div class="col-md-4 col-xs-12">
                   <div id="search-bar">
-                      <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                       <i class="fa fa-search" aria-hidden="true"></i>
                        <input type="search" name="" id="" placeholder=" Search...">
                    </div>
                </div>
@@ -99,7 +107,10 @@
                         What's New?
                       </div>
                       <div class="card-block">
-                        <textarea class="form-control" name="" id="" placeholder="Write a blog post..."></textarea>
+                       <form class="form-group">
+                            <textarea id="post-title" class="form-control" type="text" rows="1" placeholder="Blog Title..."></textarea>
+                            <textarea id="post" class="form-control" name="" id="" placeholder="Write a blog post..."></textarea>
+                       </form>
                         <ul>
                             <li><a href="#" class="btn btn-primary">Post</a></li>
                             <li class="post-links"><a href=""><i class="fa fa-smile-o" aria-hidden="true"></i></a></li>
@@ -111,7 +122,10 @@
                     </div>
                    </div>
                    
-                   <div class="card mb-3">
+                   
+                   <div id="posts">
+                   
+                   <div id="top-post" class="card mb-3">
                       <img class="card-img-top" src="images/pexels-photo-775091.jpeg" alt="Card image cap">
                       <div class="card-block">
                         <h4 class="card-title">12 Ways to Make Money Straight From Your Smart Phone</h4>
@@ -214,7 +228,7 @@
           </div>
                      
          </div> 
-         
+         </div>
           
         </section>
         
@@ -330,6 +344,19 @@
                         </div>
                      </section>
                      
+                     <!---
+                     
+                     <section>
+                         <div class="modal-body modal-sm fade" id="modal" data-toggle="modal" data-target="#edit-profile">
+                            <form class="modal-content" "edit-profile">
+                                <label class="modal-header" for="">Change Username</label>
+                                <input type="text" name="" id="">
+                            </form>
+                        </div>
+                     </section>
+                     
+                     -->
+                     
                      
       </section>
  
@@ -337,7 +364,7 @@
     
     
     
-    
+    <script src="js/tingle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>   
     <script src="js/main.js"></script>
 </body>
